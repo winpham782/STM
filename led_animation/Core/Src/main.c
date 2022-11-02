@@ -23,6 +23,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "timer.h"
+#include "global.h"
+#include "fsm_automatic.h"
 
 /* USER CODE END Includes */
 
@@ -96,12 +98,15 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  settimer1(1000);
+  status=INIT;
+  HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, 1);
+  	  HAL_GPIO_WritePin(yellow_GPIO_Port, yellow_Pin, 1);
+  	  HAL_GPIO_WritePin(green_GPIO_Port, green_Pin, 1);
   while (1)
   {
-	  if(HAL_GPIO_ReadPin(button1_GPIO_Port, button1_Pin)==0)
-	  {HAL_GPIO_TogglePin(red_GPIO_Port, red_Pin);}
 
+
+	  fsm_automatic_run();
 
     /* USER CODE END WHILE */
 
