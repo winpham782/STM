@@ -1,0 +1,21 @@
+/*
+ * fsm_automatic.c
+ *
+ *  Created on: Nov 2, 2022
+ *      Author: WinZ
+ */
+#include "fsm_automatic.h"
+
+void fsm_automatic_run()
+{
+	switch(status)
+	{
+	case 0:
+		break;
+	case 1:
+		break;
+	default: break;
+	}
+}
+
+

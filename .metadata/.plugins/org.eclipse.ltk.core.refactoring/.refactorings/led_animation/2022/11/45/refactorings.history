@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;led_animation/Core/Inc/global&apos; to &apos;global.h&apos;" description="Rename resource &apos;global&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/global" name="global.h" stamp="1667378146630" updateReferences="true"/>
+</session>
