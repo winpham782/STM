@@ -1,0 +1,21 @@
+/*
+ * button.h
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: WinZ
+ */
+
+#ifndef INC_BUTTON_H_
+#define INC_BUTTON_H_
+
+#include "main.h"
+
+#define normal_state 1
+#define pressed_state 0
+
+
+int isbutton1pressed();
+void subkeyprocess();
+void getkeyinput();
+
+#endif /* INC_BUTTON_H_ */

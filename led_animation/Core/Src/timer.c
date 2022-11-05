@@ -5,7 +5,6 @@
  *      Author: WinZ
  */
 #include "timer.h"
-#define TICK 10
 
 int timer1_count=0;
 int timer1_flag=0;
@@ -16,19 +15,19 @@ int timer3_flag=0;
 
 void settimer1(int n)
 {
-	timer1_count=n/TICK;
+	timer1_count=n;
 	timer1_flag=0;
 }
 
 void settimer2(int n)
 {
-	timer2_count=n/TICK;
+	timer2_count=n;
 	timer2_flag=0;
 }
 
 void settimer3(int n)
 {
-	timer3_count=n/TICK;
+	timer3_count=n;
 	timer3_flag=0;
 }
 
