@@ -1,0 +1,53 @@
+/*
+ * display7seg.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: WinZ
+ */
+void display7SEG(int num)
+{
+	switch(num)
+	{
+	case 0:
+		HAL_GPIO_WritePin(GPIOB, a_Pin|b_Pin|c_Pin|d_Pin|e_Pin|f_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, g_Pin, GPIO_PIN_SET);
+		break;
+	case 1:
+		HAL_GPIO_WritePin(GPIOB, a_Pin|d_Pin|e_Pin|f_Pin|g_Pin, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOB, b_Pin|c_Pin, GPIO_PIN_RESET);
+		break;
+	case 2:
+		HAL_GPIO_WritePin(GPIOB, a_Pin|d_Pin|e_Pin|b_Pin|g_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, f_Pin|c_Pin, GPIO_PIN_SET);
+		break;
+	case 3:
+		HAL_GPIO_WritePin(GPIOB, a_Pin|d_Pin|c_Pin|b_Pin|g_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, f_Pin|e_Pin, GPIO_PIN_SET);
+		break;
+	case 4:
+		HAL_GPIO_WritePin(GPIOB, b_Pin|c_Pin|f_Pin|g_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, a_Pin|e_Pin|d_Pin, GPIO_PIN_SET);
+		break;
+	case 5:
+		HAL_GPIO_WritePin(GPIOB, a_Pin|c_Pin|d_Pin|f_Pin|g_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, b_Pin|e_Pin, GPIO_PIN_SET);
+		break;
+	case 6:
+		HAL_GPIO_WritePin(GPIOB, a_Pin|c_Pin|d_Pin|e_Pin|f_Pin|g_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, b_Pin, GPIO_PIN_SET);
+		break;
+	case 7:
+		HAL_GPIO_WritePin(GPIOB, a_Pin|b_Pin|c_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, f_Pin|d_Pin|e_Pin|g_Pin, GPIO_PIN_SET);
+		break;
+	case 8:
+		HAL_GPIO_WritePin(GPIOB, a_Pin|b_Pin|c_Pin|f_Pin|d_Pin|e_Pin|g_Pin, GPIO_PIN_RESET);
+		break;
+	case 9:
+		HAL_GPIO_WritePin(GPIOB, a_Pin|b_Pin|c_Pin|f_Pin|d_Pin|g_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOB, e_Pin, GPIO_PIN_SET);
+		break;
+	default: break;
+	}
+}
+

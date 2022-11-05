@@ -11,14 +11,17 @@
 #include "main.h"
 #include "timer.h"
 #include "button.h"
+#include "fsm_automatic.h"
+#include "display7seg.h"
 
-#define INIT 		1
-#define countreset 	2
-#define counterinc  3
-#define counterdec 	4
-#define wait		5
-#define auto_dec	6
+#define INIT			1
+#define counterreset 	2
+#define counterinc  	3
+#define counterdec 		4
+#define wait			5
+#define auto_dec		6
 
 extern int status;
+extern int counter;
 
 #endif /* INC_GLOBAL_H_ */

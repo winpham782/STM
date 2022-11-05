@@ -1,0 +1,6 @@
+button.c:21:5:checkbuttonreset	4	static
+button.c:31:5:checkbuttoninc	4	static
+button.c:41:5:checkbuttondec	4	static
+button.c:52:6:getresetinput	8	static
+button.c:81:6:getincinput	8	static
+button.c:110:6:getdecinput	8	static

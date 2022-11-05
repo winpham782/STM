@@ -101,6 +101,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   status=INIT;
   settimer1(100);
+  display7SEG(0);
   while (1)
   {
 	  if(timer1_flag==1)
@@ -109,8 +110,7 @@ int main(void)
 		  settimer1(100);
 	  }
 
-
-
+	  fsm_automatic_run();
 
     /* USER CODE END WHILE */
 
@@ -249,7 +249,10 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	timerrun();
-	getkeyinput();
+	getresetinput();
+	getincinput();
+	getdecinput();
+
 }
 
 

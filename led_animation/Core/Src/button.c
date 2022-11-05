@@ -10,7 +10,9 @@ int keyregreset[4]={normal_state,normal_state,normal_state,normal_state};
 int keyreginc[4]={normal_state,normal_state,normal_state,normal_state};
 int keyregdec[4]={normal_state,normal_state,normal_state,normal_state};
 
-int timerforkeyreg=300;
+int timerforkeyregreset=300;
+int timerforkeyreginc=300;
+int timerforkeyregdec=300;
 
 int buttonreset_flag=0;
 int buttoninc_flag=0;
@@ -60,16 +62,77 @@ void getresetinput()
 			keyregreset[3]=keyregreset[2];
 			if(keyregreset[2]==pressed_state)
 			{
-				counter++;
-				timerforkeyreg=300;
+				buttonreset_flag=1;
+				timerforkeyregreset=300;
 			}
 		}else{
-			timerforkeyreg--;
-			if(timerforkeyreg==0)
+			timerforkeyregreset--;
+			if(timerforkeyregreset==0)
 			{
-				keyreg3=normal_state;
+				if(keyregreset[2]==pressed_state)
+				{
+					timerforkeyregreset=100;
+					buttonreset_flag=1;
+				}
 			}
 		}
 	}
+}
+void getincinput()
+{
+	keyreginc[0]=keyreginc[1];
+	keyreginc[1]=keyreginc[2];
+	keyreginc[2]= HAL_GPIO_ReadPin(buttoninc_GPIO_Port, buttoninc_Pin);
 
+	if( (keyreginc[0] == keyreginc[1]) && (keyreginc[1] == keyreginc[2]))
+	{
+		if(keyreginc[3] != keyreginc[2])
+		{
+			keyreginc[3]=keyreginc[2];
+			if(keyreginc[2]==pressed_state)
+			{
+				buttoninc_flag=1;
+				timerforkeyreginc=300;
+			}
+		}else{
+			timerforkeyreginc--;
+			if(timerforkeyreginc==0)
+			{
+				if(keyreginc[2]==pressed_state)
+				{
+					timerforkeyreginc=100;
+					buttoninc_flag=1;
+				}
+			}
+		}
+	}
+}
+void getdecinput()
+{
+	keyregdec[0]=keyregdec[1];
+	keyregdec[1]=keyregdec[2];
+	keyregdec[2]= HAL_GPIO_ReadPin(buttondec_GPIO_Port, buttondec_Pin);
+
+	if( (keyregdec[0] == keyregdec[1]) && (keyregdec[1] == keyregdec[2]))
+	{
+		if(keyregdec[3] != keyregdec[2])
+		{
+			keyregdec[3]=keyregdec[2];
+			if(keyregdec[2]==pressed_state)
+			{
+				buttondec_flag=1;
+				timerforkeyregdec=300;
+			}
+		}else{
+			timerforkeyregdec--;
+			if(timerforkeyregdec==0)
+			{
+				if(keyregdec[2]==pressed_state)
+				{
+					timerforkeyregdec=100;
+					buttondec_flag=1;
+				}
+			}
+		}
+	}
 }

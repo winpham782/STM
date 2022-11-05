@@ -13,11 +13,10 @@
 #define normal_state 1
 #define pressed_state 0
 
-
 int checkbuttonreset();
 int checkbuttoninc();
 int checkbuttondec();
-void subkeyprocess();
+
 void getresetinput();
 void getincinput();
 void getdecinput();
