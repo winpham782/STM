@@ -3122,3 +3122,26 @@
 2022-11-05 09:55:34,089 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2056mS.
 2022-11-05 09:55:34,090 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
 2022-11-05 09:55:34,092 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+<<<<<<< Updated upstream
+=======
+2022-11-05 15:28:40,457 [INFO] Activator:177 - 
+
+
+2022-11-05 15:28:40,458 [INFO] Activator:178 - !SESSION log4j initialized
+2022-11-05 15:30:20,959 [INFO] Activator:177 - 
+
+
+2022-11-05 15:30:20,960 [INFO] Activator:178 - !SESSION log4j initialized
+2022-11-05 15:31:02,575 [INFO] Activator:177 - 
+
+
+2022-11-05 15:31:02,577 [INFO] Activator:178 - !SESSION log4j initialized
+>>>>>>> Stashed changes
+2022-11-15 20:17:20,746 [INFO] Activator:177 - 
+
+
+2022-11-15 20:17:20,748 [INFO] Activator:178 - !SESSION log4j initialized
+2022-11-15 20:17:21,178 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:2: The markup in the document preceding the root element must be well-formed.
+2022-11-15 20:17:21,179 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2022-11-15 20:17:23,367 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :9:2: The content of elements must consist of well-formed character data or markup.
+2022-11-15 20:17:23,368 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
