@@ -1,0 +1,13 @@
+/*
+ * global.c
+ *
+ *  Created on: Nov 2, 2022
+ *      Author: WinZ
+ */
+#include "global.h"
+
+int status=0;
+int counterred=0;
+int counteryellow=0;
+int countergreen=0;
+

@@ -1,1 +1,4 @@
-display7seg.c:9:6:display7SEG	16	static
+display7seg.c:9:6:display7SEG11	16	static
+display7seg.c:56:6:display7SEG21	16	static
+display7seg.c:119:6:display7SEG12	16	static
+display7seg.c:166:6:display7SEG22	16	static

@@ -18,7 +18,7 @@ int buttonreset_flag=0;
 int buttoninc_flag=0;
 int buttondec_flag=0;
 
-int checkbuttonreset()
+int mode()
 {
 	if(buttonreset_flag==1)
 	{
@@ -28,7 +28,7 @@ int checkbuttonreset()
 		return 0;
 	}
 }
-int checkbuttoninc()
+int inc()
 {
 	if(buttoninc_flag==1)
 	{
@@ -38,7 +38,7 @@ int checkbuttoninc()
 		return 0;
 	}
 }
-int checkbuttondec()
+int set()
 {
 	if(buttondec_flag==1)
 	{

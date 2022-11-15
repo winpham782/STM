@@ -13,9 +13,9 @@
 #define normal_state 1
 #define pressed_state 0
 
-int checkbuttonreset();
-int checkbuttoninc();
-int checkbuttondec();
+int mode();
+int inc();
+int set();
 
 void getresetinput();
 void getincinput();
