@@ -10,9 +10,8 @@
 
 #include "global.h"
 
-void display7SEG11(int num);
-void display7SEG12(int num);
-void display7SEG21(int num);
-void display7SEG22(int num);
+void display7SEG1(int num);
+void display7SEG2(int num);
+
 
 #endif /* INC_DISPLAY7SEG_H_ */
