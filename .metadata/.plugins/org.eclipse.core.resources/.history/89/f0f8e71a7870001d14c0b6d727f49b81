@@ -1,0 +1,8 @@
+/*
+ * schduler.c
+ *
+ *  Created on: Nov 30, 2022
+ *      Author: WinZ
+ */
+#include "scheduler.h"
+

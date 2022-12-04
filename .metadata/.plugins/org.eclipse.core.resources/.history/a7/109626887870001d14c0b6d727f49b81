@@ -1,0 +1,22 @@
+/*
+ * schduler.c
+ *
+ *  Created on: Nov 30, 2022
+ *      Author: WinZ
+ */
+#include "scheduler.h"
+sTasks SCH_Tasks_G[SCH_MAX_TASKS];
+uint8_t current_index_task=0;
+
+void SCH_Init(void){
+	current_index_task=0;
+}
+
+void SCH_Add_Task(	void (*pFunction)(void),
+					uint32_t DELAY,
+					uint32_t PERIOD){
+	if (current_index_task < SCH_MAX_TASKS){
+
+	}
+}
+
