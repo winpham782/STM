@@ -11,8 +11,8 @@
 #include <stdint.h>
 #include "global.h"
 #define SCH_MAX_TASKS 40
-uint8_t s[];
-int count=0;
+UART_HandleTypeDef huart1;
+void MX_USART1_UART_Init(void);
 
 typedef struct {
 	void (*pTask)(void);

@@ -1,0 +1,6 @@
+schduler.c:15:6:MX_USART1_UART_Init	8	static
+schduler.c:43:6:SCH_Init	16	static
+schduler.c:51:6:SCH_Add_Task	24	static
+schduler.c:69:6:SCH_Update	16	static
+schduler.c:83:6:SCH_Dispatch_Tasks	536	static
+schduler.c:101:6:SCH_Delete	32	static
