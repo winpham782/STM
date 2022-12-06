@@ -122,7 +122,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   SCH_Init();
-  SCH_Add_Task(led1test, 100, 200);
+  SCH_Add_Task(led1test, 100, 50);
   SCH_Add_Task(led2test, 100, 100);
   SCH_Add_Task(led5test, 250, 0);
   SCH_Add_Task(led3test, 100, 150);

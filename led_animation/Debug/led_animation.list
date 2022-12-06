@@ -191,8 +191,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   SCH_Init();
  80001ce:	f000 f91d 	bl	800040c <SCH_Init>
-  SCH_Add_Task(led1test, 100, 200);
- 80001d2:	22c8      	movs	r2, #200	; 0xc8
+  SCH_Add_Task(led1test, 100, 50);
+ 80001d2:	2232      	movs	r2, #50	; 0x32
  80001d4:	2164      	movs	r1, #100	; 0x64
  80001d6:	480e      	ldr	r0, [pc, #56]	; (8000210 <main+0x60>)
  80001d8:	f000 f932 	bl	8000440 <SCH_Add_Task>
